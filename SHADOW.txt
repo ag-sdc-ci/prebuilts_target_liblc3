@@ -1,0 +1,6 @@
+shadow prebuilt repo: liblc3 (target)
+  upstream: external/liblc3
+  api-level: 32 (branch 32-20261016)
+  blobs: org.blisslabs.ag.liblc3.apex org.blisslabs.ag.liblc3.dev.apex org.blisslabs.ag.liblc3.doc.apex
+  dev-src: extracted dev payload + headers + root Android.bp
+  date: 2026-10-16

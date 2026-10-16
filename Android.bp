@@ -1,0 +1,50 @@
+package {
+    default_applicable_licenses: ["external_liblc3_license"],
+}
+
+license {
+    name: "external_liblc3_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+prebuilt_apex {
+    name: "org.blisslabs.ag.liblc3",
+    apex_name: "org.blisslabs.ag.liblc3",
+    source_apex_name: "org.blisslabs.ag.liblc3",
+    arch: {
+        x86_64: {
+            src: "org.blisslabs.ag.liblc3.apex",
+        },
+    },
+    filename: "org.blisslabs.ag.liblc3.apex",
+    prefer: true,
+    installable: true,
+}
+
+cc_prebuilt_library {
+    name: "liblc3",
+    host_supported: true,
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:any",
+        "com.android.btservices",
+    ],
+    export_include_dirs: [
+        "dev-src/include",
+    ],
+    shared: {
+        srcs: ["src/lib/liblc3.so"],
+    },
+    static: {
+        srcs: ["dev-src/lib/liblc3.a"],
+    },
+}

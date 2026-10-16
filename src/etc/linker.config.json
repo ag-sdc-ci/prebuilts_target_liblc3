@@ -1,0 +1,13 @@
+{
+	"provideLibs": [	
+		    "libdummy_liblc3-x86_64-v2.so",
+		    "libdummy_liblc3.so",
+		    "liblc3-x86_64-v2.so",
+		    "liblc3.so"
+	],
+	"requireLibs": [	
+		    "libc.so",
+		    "libm.so"
+	],
+	"visible": true
+}

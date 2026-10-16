@@ -1,0 +1,10 @@
+prefix=/apex/org.blisslabs.ag.liblc3
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: liblc3
+Description: LC3 codec library
+Version: 1.0.4
+Libs: -L${libdir} -llc3
+Libs.private: -lm
+Cflags: -I${includedir}

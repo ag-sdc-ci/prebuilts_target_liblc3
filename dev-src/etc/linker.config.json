@@ -1,0 +1,11 @@
+{
+	"provideLibs": [	
+		    "libdummy_headers_liblc3-x86_64-v2.so",
+		    "libdummy_headers_liblc3.so",
+		    "libdummy_liblc3_dev-x86_64-v2.so",
+		    "libdummy_liblc3_dev.so",
+		    "libdummy_pkgconfig_liblc3-x86_64-v2.so",
+		    "libdummy_pkgconfig_liblc3.so"
+	],
+	"visible": true
+}
