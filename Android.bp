@@ -35,7 +35,7 @@ cc_prebuilt_library {
     recovery_available: true,
     apex_available: [
         "//apex_available:platform",
-        "//apex_available:any",
+        "//apex_available:anyapex",
         "com.android.btservices",
     ],
     export_include_dirs: [
