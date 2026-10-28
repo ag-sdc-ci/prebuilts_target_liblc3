@@ -39,12 +39,12 @@ cc_prebuilt_library {
         "com.android.btservices",
     ],
     export_include_dirs: [
-        "dev-src/include",
+        "include",
     ],
     shared: {
-        srcs: ["src/lib/liblc3.so"],
+        srcs: ["lib64/liblc3.so"],
     },
     static: {
-        srcs: ["dev-src/lib/liblc3.a"],
+        srcs: ["lib64/liblc3.a"],
     },
 }
